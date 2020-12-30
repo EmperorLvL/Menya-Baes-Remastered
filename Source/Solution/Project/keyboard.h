@@ -1,14 +1,11 @@
 /*
-		THIS FILE IS A PART OF GTA V SCRIPT HOOK SDK
-					http://dev-c.com
-				(C) Alexander Blade 2015
+	THIS FILE IS A PART OF GTA V SCRIPT HOOK SDK
+				http://dev-c.com
+			(C) Alexander Blade 2019
 */
-
 #pragma once
-
 #include <windows.h>
 
-// parameters are the same as with aru's ScriptHook for IV
 void OnKeyboardMessage(DWORD key, WORD repeats, BYTE scanCode, BOOL isExtended, BOOL isWithAlt, BOOL wasDownBefore, BOOL isUpNow);
 
 bool IsKeyDown(DWORD key);
@@ -22,7 +19,7 @@ namespace MenuPressTimer
 		None, Up, Down, Left, Right, Back, Accept
 	};
 	extern MenuPressTimer::Button currentButton;
-	extern DWORD offsettedTime;
+	extern ULONGLONG offsettedTime;
 
 	void Update();
 	bool IsButtonHeld(const MenuPressTimer::Button& button);
