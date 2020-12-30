@@ -6,7 +6,6 @@ typedef DWORD Void;
 typedef DWORD Any;
 typedef DWORD uint;
 typedef DWORD Hash;
-typedef int ScrHandle;
 typedef int Entity;
 typedef int Player;
 typedef int FireId;
@@ -24,21 +23,29 @@ typedef int Blip;
 typedef int Texture;
 typedef int TextureDict;
 typedef int CoverPoint;
+typedef int Camera;
+typedef int TaskSequence;
 typedef int ColourIndex;
+typedef int Instructional;
 typedef int Sphere;
+typedef int ScrHandle;
+typedef int Scaleform;
 
 #pragma pack(push, 1)
 typedef struct
 {
-	float x;
-	DWORD _paddingx;
-	float y;
-	DWORD _paddingy;
-	float z;
-	DWORD _paddingz;
+	alignas(8) float x;
+	alignas(8) float y;
+	alignas(8) float z;
 } Vector3;
 #pragma pack(pop)
 
-typedef struct { float x, y; } Vector2;
+typedef struct 
+{ 
+	float x, y;
+} Vector2;
 
-typedef struct{ int R, G, B, A; } RGBA;
+typedef struct
+{ 
+	int R, G, B, A; 
+} RGBA;
