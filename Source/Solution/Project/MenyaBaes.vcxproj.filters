@@ -3,9 +3,15 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="script.cpp" />
-    <ClCompile Include="keyboard.cpp" />
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Menu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="keyboard.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\inc\types.h">
@@ -17,18 +23,26 @@
     <ClInclude Include="..\..\inc\natives.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="script.h">
-      <Filter>include</Filter>
-    </ClInclude>
     <ClInclude Include="keyboard.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="Menu.h" />
+    <ClInclude Include="script.h" />
+    <ClInclude Include="Menu.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="include">
       <UniqueIdentifier>{fe82bd4a-2d14-486a-8be5-8bf6b50a2414}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{d72ce9b6-6c6c-4235-8720-e80593560632}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripting">
+      <UniqueIdentifier>{f8f107f5-a840-44d3-852c-f512b6e995ad}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

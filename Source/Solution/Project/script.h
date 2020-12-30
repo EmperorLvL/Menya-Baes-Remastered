@@ -1,35 +1,31 @@
 /*
 	THIS FILE IS A PART OF GTA V SCRIPT HOOK SDK
 				http://dev-c.com
-			(C) Alexander Blade 2015
+			(C) Alexander Blade 2019
 */
-
 #pragma once
 
-#include <string>
-#include <ctime>
-#include <sstream>
-#include <windows.h>
-#include <stdio.h>
-#include <string>
-#include <psapi.h>
 #include <Windows.h>
-#include <iostream>
-#include <stdint.h>
+#include <string>
+#include <sstream>
 #include <iostream>
 #include <fstream>
+#include <ctime>
+#include <functional>
+#include <stdio.h>
+#include <psapi.h>
+#include <stdint.h>
 #include <TlHelp32.h>
 #include <tchar.h>
 #include <algorithm>
-#include <cstdio>
-#include <vector>
-#include "Shlobj.h"
 #include <filesystem>
 
 #include "..\..\inc\natives.h"
 #include "..\..\inc\types.h"
 #include "..\..\inc\enums.h"
 #include "..\..\inc\main.h"
+
+#include "Log.h"
 
 #include "keyboard.h"
 #include "Game.h"
